@@ -26,7 +26,7 @@ export const createPost = async (req, res) => {
   try {
     const { title, description } = req.body;
     let image;
-    if (req.files.image) {
+    if (req.files?.image) {
       const result = await uploadImage(req.files.image.tempFilePath);
       await fs.remove(req.files.image.tempFilePath);
       image = {

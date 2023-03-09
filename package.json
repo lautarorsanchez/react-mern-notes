@@ -1,7 +1,7 @@
 {
   "type": "module",
   "scripts": {
-    "dev": "nodemon server/index.js"
+    "dev": "nodemon server/index.js --ignore client"
   },
   "dependencies": {
     "cloudinary": "^1.35.0",
