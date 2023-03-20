@@ -31,7 +31,7 @@ if(posts.length === 0)
       
         </div>
       
-      <div className="grid grid-cols-3 gap-2">{posts.map((post) => (
+      <div className="grid md:grid-cols-3 gap-2">{posts.map((post) => (
         <Postcard post={post} key={post._id}/>
         ))}
       </div>
