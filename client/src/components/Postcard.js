@@ -24,8 +24,8 @@ const handleDelete = (_id) => {
 }
 
   return (
-    <div className="bg-zinc-700 rounded-sm shadow-md shadow-black hover:bg-zinc-600 " >
-      <div className="px-5 py-10">
+    <div className="bg-zinc-700 rounded-sm shadow-md shadow-black hover:bg-zinc-600" >
+      <div className="px-5 py-10 ">
         <div className="flex justify-between">
           <h2 className="text-xl">{post.title}</h2>
           <div>
@@ -36,7 +36,9 @@ const handleDelete = (_id) => {
           </div>
         </div>
         <p>{post.description}</p>
+      {post.image && <img src={post.image.url} className=' w-full h-50 object-cover'></img>}
       </div>
+
     </div>
   );
 };
