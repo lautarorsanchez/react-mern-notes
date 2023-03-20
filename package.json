@@ -1,7 +1,9 @@
 {
   "type": "module",
   "scripts": {
-    "dev": "nodemon server/index.js --ignore client"
+    "dev": "nodemon server/index.js --ignore client",
+    "start":"node server",
+    "build":"npm run build --prefix client"
   },
   "dependencies": {
     "cloudinary": "^1.35.0",
@@ -15,5 +17,6 @@
   },
   "devDependencies": {
     "nodemon": "^2.0.20"
+    
   }
 }

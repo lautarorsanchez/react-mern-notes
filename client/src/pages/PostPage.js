@@ -28,12 +28,12 @@ export function PostPage() {
     <div className="flex items-center justify-center text-white">
       <div className="bg-zinc-700 rounded shadow-md shadow-black p-8">
         <div className="flex justify-between items-center py-4">
-          <h1 className="text-xl">Create a new note</h1>
+          <h1 className="text-xl"> Create a public note </h1>
           <Link to="/" className=" text-center text-indigo-400">
             Go Back
           </Link>
         </div>
-        <p className="mb-5 text-sm">Share something nice :) <br></br> Please don't be offensive, it's a professional portfolio app. </p>
+        <p className="mb-5 text-sm">Share something nice :) It will be posted in our board.  <br></br> Please don't be offensive, it's a professional portfolio app. </p>
 
         <Formik
           initialValues={post}
@@ -90,7 +90,7 @@ export function PostPage() {
               />
               <label
                 htmlFor='image'
-                className="text-sm text-white block text-gray-400 "
+                className="text-sm block text-gray-400 "
               >  Image
               </label>
 
