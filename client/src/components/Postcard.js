@@ -33,7 +33,7 @@ const handleDelete = (_id) => {
           <button className="px-2 py-1 rounded mx-2 bg-red-600 hover:bg-red-900" onClick={() => handleDelete(post._id)}>
             Delete
           </button> 
-          <button className="px-2 py-1 rounded bg-indigo-600 hover:bg-indigo-900" onClick={() => navigate(`/posts/${post._id}`)}>Edit</button>
+          {post.image ? <button className="px-2 py-1 rounded bg-indigo-600 hover:bg-indigo-900 cursor-not-allowed " onClick={() => navigate(`/posts/${post._id}`)} disabled>Edit</button> : <button className="px-2 py-1 rounded bg-indigo-600 hover:bg-indigo-900" onClick={() => navigate(`/posts/${post._id}`)}>Edit</button>}
           </div>
         </div>
         <p className='mb-5'>{post.description}</p>
