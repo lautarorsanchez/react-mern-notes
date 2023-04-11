@@ -1,7 +1,7 @@
 # react-mern
-DEPLOYED ON https://mern-notes.herokuapp.com/
+DEPLOYED ON https://react-mern-notes.onrender.com/
 
-Notes APP using MERN stack deployed in Heroku.
+Notes APP using MERN stack deployed in Render.
 
 Able to create, storage, edit and delete notes in a database, and show it on a React interface.
 Uses Cloudinary API for image notes.
