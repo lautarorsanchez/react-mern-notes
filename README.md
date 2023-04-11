@@ -1,6 +1,3 @@
 # react-mern
-DEPLOYED ON https://mern-notes.herokuapp.com/
 
-App notes MERN stack deployed in Heroku
-
-React Notes APP conected to MongoDB and Cloudinary
+On this branch i'm trying to add a replace image feature. Visit MAIN branch to watch the complete and deployed app.
