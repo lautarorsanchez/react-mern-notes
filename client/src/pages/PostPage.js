@@ -25,7 +25,7 @@ export function PostPage() {
   }, [params.id]);
 
   return (
-    <main className=" items-center justify-center text-white bg-zinc-700 rounded shadow-md shadow-black p-10">
+    <main className="items-center justify-center text-white bg-zinc-700 rounded shadow-md shadow-black p-10">
       <section className="md:flex justify-between items-center py-4">
         <span>
           <h1 className="text-xl"> Create a public note </h1>
@@ -47,7 +47,7 @@ export function PostPage() {
             .max(25, "Write a shorter title"),
           description: Yup.string()
             .required("Description is required")
-            .max(150, "Write a shorter description"),
+            .max(70, "Write a shorter description"),
         })}
         onSubmit={async (values, actions) => {
           if (params.id) {

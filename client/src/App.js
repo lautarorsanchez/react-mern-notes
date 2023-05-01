@@ -5,7 +5,7 @@ import {Toaster} from 'react-hot-toast'
 
 function App() {
   return (
-      <>
+      <div className='text-white px-10 py-10 bg-neutral-800 min-h-screen items-center'>
         <PostProvider>
           <Routes>
             <Route path="/" element={<HomePage />} />
@@ -15,7 +15,7 @@ function App() {
           </Routes>
           <Toaster />
         </PostProvider>
-      </>
+      </div>
   );
 }
 

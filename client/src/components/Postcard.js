@@ -44,17 +44,17 @@ export const Postcard = ({ post }) => {
   
   return (
     <article className="h-fit bg-zinc-700 rounded-sm shadow-md shadow-black hover:bg-zinc-600 px-5 py-10">
-      <div className="flex justify-between">
+      <div className="md:flex justify-between">
         <span>
         <h2 className="text-xl">
           <VscFeedback className="h-5 w-5 inline mr-2"></VscFeedback>
           {post.title}
         </h2>
-          <p className="mb-5 text-gray-400 text-base">{post.description}</p>
+          <p className="mb-2 text-gray-400 text-base">{post.description}</p>
         </span>
-        <span className="min-w-fit">
+        <span className="min-w-fit mb-10">
           <button
-            className="px-2 py-1 rounded mx-2 bg-red-600 hover:bg-red-900"
+            className="mb-2 px-2 py-1 rounded mx-2 bg-red-600 hover:bg-red-900"
             onClick={() => handleDelete(post._id)}
           >
             Delete{" "}
