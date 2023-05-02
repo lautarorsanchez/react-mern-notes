@@ -10,12 +10,12 @@ export const Postcard = ({ post }) => {
   const handleDelete = (_id) => {
     toast(
       (t) => (
-        <div className="text-white">
+        <aside className="text-white">
           <p>
             {" "}
             You're about to delete <strong>{post.title}</strong>. Proceed?
           </p>
-          <div className="mt-1">
+          <section className="mt-1">
             <button
               className="mr-2 px-4 py-1 rounded bg-indigo-600 hover:bg-indigo-900"
               onClick={() => toast.dismiss(t.id)}
@@ -31,8 +31,8 @@ export const Postcard = ({ post }) => {
             >
               Yes
             </button>
-          </div>
-        </div>
+          </section>
+        </aside>
       ),
       {
         style: {
@@ -44,7 +44,7 @@ export const Postcard = ({ post }) => {
   
   return (
     <article className="h-fit bg-zinc-700 rounded-sm shadow-md shadow-black hover:bg-zinc-600 px-5 py-10">
-      <div className="md:flex justify-between">
+      <section className="md:flex justify-between">
         <span>
         <h2 className="text-xl">
           <VscFeedback className="h-5 w-5 inline mr-2"></VscFeedback>
@@ -76,7 +76,7 @@ export const Postcard = ({ post }) => {
             </button>
           )}
         </span>
-      </div>
+      </section>
       {post.image && (
         <img src={post.image.url} className=" w-50 h-50 object-cover"></img>
       )}
